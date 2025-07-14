@@ -1,0 +1,97 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+/* --- Base and Reset Styles --- */
+html { line-height: 1.15; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { margin: 0; padding: 0; font-size: 100%; line-height: 1.5; color: #555; font-family: 'Nunito Sans', sans-serif; }
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section { display: block; }
+h1, h2, h3, h4, strong { margin-top: 1em; padding-top: 1em; line-height: 1.25; color: #333; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1rem; }
+p { margin: 1em 0; }
+a { background-color: transparent; text-decoration: none; }
+img { border-style: none; max-width: 100%; height: auto; }
+figure { margin: 1em 40px; }
+ol, ul { padding-left: 40px; }
+
+/* --- Font Awesome v4.7.0 --- */
+@font-face { font-family: 'FontAwesome'; src: url('../fonts/fontawesome-webfont.eot?v=4.7.0'); src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg'); font-weight: normal; font-style: normal; }
+.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* ... (all other Font Awesome classes follow) ... */
+.fa-linkedin:before { content: "\f0e1"; } .fa-github-alt:before { content: "\f113"; } .fa-file-pdf-o:before { content: "\f1c1"; } .fa-envelope:before { content: "\f0e0"; } .fa-chevron-down:before { content: "\f078"; } .fa-chevron-left:before { content: "\f053"; } .fa-chevron-right:before { content: "\f054"; } .fa-file-text-o:before { content: "\f0f6"; }
+
+/* --- Devicon v2.2 --- */
+@font-face { font-family: 'devicon'; src: url('../fonts/devicon.eot?-hdf3wh'); src: url('../fonts/devicon.eot?#iefix-hdf3wh') format('embedded-opentype'), url('../fonts/devicon.woff?-hdf3wh') format('woff'), url('../fonts/devicon.ttf?-hdf3wh') format('truetype'), url('../fonts/devicon.svg?-hdf3wh#devicon') format('svg'); font-weight: normal; font-style: normal; }
+[class*="devicon-"], [class^="devicon-"] { font-family: "devicon"; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
+/* ... (all other Devicon classes follow) ... */
+.devicon-python-plain:before { content: "\eb89"; } .devicon-java-plain-wordmark:before { content: "\e841"; } .devicon-cplusplus-plain:before { content: "\e635"; } .devicon-javascript-plain:before { content: "\e845"; } .devicon-react-original:before { content: "\e601"; } .devicon-html5-plain-wordmark:before { content: "\e7f6"; } .devicon-css3-plain-wordmark:before { content: "\e678"; } .devicon-git-plain-wordmark:before { content: "\e7a7"; } .devicon-visualstudio-plain:before { content: "\e927"; } .devicon-github-plain-wordmark:before { content: "\e90a"; }
+.colored { color: #555; } /* Default color */
+.devicon-python-plain.colored { color: #ffd845; } .devicon-java-plain-wordmark.colored { color: #ea2d2e; } .devicon-cplusplus-plain.colored { color: #9c033a; } .devicon-javascript-plain.colored { color: #f0db4f; } .devicon-react-original.colored { color: #61dafb; } .devicon-html5-plain-wordmark.colored { color: #e54d26; } .devicon-css3-plain-wordmark.colored { color: #3d8fc6; } .devicon-git-plain-wordmark.colored { color: #f34f29; } .devicon-visualstudio-plain.colored { color: #68217a; } .devicon-github-plain-wordmark.colored { color: #181616; }
+
+/* --- General Layout --- */
+#particles-js { background: linear-gradient(to right, #2B32B2, #1488CC); display: flex; width: 100%; min-height: 100vh; background-size: cover; background-attachment: fixed; }
+.header { z-index: 1; text-align: center; color: #fff; position: absolute; font-family: 'Rubik', sans-serif; width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.header .site-title { font-size: 35px; display: block; color: #fff; }
+.header .site-description { font-size: 20px; display: block; color: #fff; margin-top: 10px; }
+.header-links { margin: 20px 0 10px; }
+.header-links .link { color: #fff; font-size: 15px; margin: 0 15px; }
+.header-icons { display: flex; justify-content: center; text-align: center; margin-top: 20px;}
+.header-icons .icon { color: #fff; text-align: center; height: 20px; padding: 10px; border-radius: 50%; border: 2px solid #fff; transition: all .3s; width: 20px; font-size: 20px; margin: 5px; }
+.header-icons .icon:hover { color: #1488CC; background: #fff; }
+.down { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; font-size: 30px; cursor: pointer; }
+.down .icon { color: white; animation: pulse 1.5s infinite; }
+
+/* --- About and Skills Section --- */
+#about { width: 90%; margin: 0 auto; max-width: 960px; padding-top: 40px; }
+.user-details { text-align: center; margin: 20px auto; }
+.profile-picture { width: 150px; height: 150px; border-radius: 50%; background-image: url('../img/jpg/DSC08677.JPG'); background-size: cover; background-position: center; margin: 20px auto; border: 3px solid #ddd; }
+.user { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; margin-top: 40px; }
+.tech { flex: 1; min-width: 280px; display: flex; flex-direction: column; align-items: center; padding: 10px; margin: 10px; }
+.tech h2 { margin-top: 0; margin-bottom: 20px; }
+.tech p { margin-top: 20px; max-width: 260px; font-size: 16px; }
+.icons-container { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; min-height: 80px; width: 100%; }
+.icons-container i { margin: 10px 15px; font-size: 60px; }
+
+/* --- Projects Section --- */
+#projects { display: flex; flex-direction: column; width: 90%; max-width: 960px; margin: 0 auto; padding-top: 40px; }
+.user-projects { margin: 50px auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4%; }
+.user-projects img { border-radius: 5px; vertical-align: middle; }
+.images-left, .images-right, .contents, .contents-left, .contents-right { width: 100%; margin-bottom: 20px; }
+.project-link { display: inline-block; margin-top: 20px; padding: 8px 15px; color: #1488CC; background-color: transparent; border: 1px solid #1488CC; border-radius: 5px; text-align: center; cursor: pointer; transition: all .3s ease-out; }
+.project-link:hover { background-color: #5347a8; border-color: #5347a8; color: #fff; }
+
+/* --- Slider Styles --- */
+.slider-container { position: relative; margin: auto; }
+.slide { display: none; }
+.prev, .next { cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; color: white; background-color: rgba(0, 0, 0, 0.3); border-radius: 50%; user-select: none; transition: background-color 0.3s ease; display: flex; justify-content: center; align-items: center; border: none; }
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.6); }
+.prev .fa, .next .fa { font-size: 20px; }
+.fade { animation-name: fade; animation-duration: 1s; }
+
+/* --- Footer --- */
+.footer { background: linear-gradient(to right, #2B32B2, #1488CC); padding: 20px 0; margin-top: 100px; text-align: center; color: #fff; }
+.footer a { color: #fff; }
+
+/* --- Animations --- */
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+@keyframes pulse { 0%, to { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+/* --- Media Queries for Responsive Layout --- */
+@media only screen and (min-width: 768px) {
+    .header .site-title { font-size: 80px; }
+    .header .site-description { font-size: 30px; }
+    .header-links .link { font-size: 20px; }
+    .header-icons .icon { width: 35px; height: 35px; font-size: 35px; }
+    #about, #projects { width: 80%; }
+    .icons-container i { font-size: 75px; }
+    .images-left, .images-right, .contents, .contents-left, .contents-right { width: 48%; margin-bottom: 0; }
+    .images-left { order: 1; }
+    .contents-right { order: 2; }
+    .images-right { order: 2; }
+    .contents-left, .contents { order: 1; }
+}
